@@ -11,35 +11,32 @@
 <body>
 
 <!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-
-    <div class="login_main_box">
-
-        <!-- logo text img -->
-        <div class="login_comp_img"></div>
-
-        <!-- login content -->
-
-        <div class="login_content">
-            <span id="login_content_description">Sign Up & Login to get started</span>
-            <i class="fa-solid fa-xmark" id="login_close"></i>
-            <div class="login_content_heading">
-                <button>CREATE AN ACCOUNT</button>
-                <button>SIGN IN</button>
-            </div>
-
-            <!-- sign up or login form -->
-
-            <form>
-                <input  id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                <input type="password" placeholder="Enter Password" required>
-                <a href="#" id="forget_password">Forget Password?</a>
-                <p id="otp">Sign in using <b>OTP</b></p>
-                <div class="login_button_div">
-                    <button id="login_button">LOGIN</button>
+    <div class="atul_login_box">
+        <div class="login_main_box" id="login_main_box">
+            <!-- logo text img -->
+            <div class="login_comp_img"></div>
+            <!-- login content -->
+            <div class="login_content">
+                <span id="login_content_description">Sign Up & Login to get started</span>
+                <i class="fa-solid fa-xmark" id="login_close"></i>
+                <div class="login_content_heading">
+                    <button>CREATE AN ACCOUNT</button>
+                    <button>SIGN IN</button>
                 </div>
-            </form>
+                <!-- sign up or login form -->
+                <form>
+                    <input id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
+                    <input id="sss" type="password" placeholder="Enter Password" required>
+                    <a href="#" id="forget_password">Forget Password?</a>
+                    <p id="otp">Sign in using <b>OTP</b></p>
+                    <div class="login_button_div">
+                        <button id="login_button">LOGIN</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    
 
     <div class="inside_menu">
         <div class="inside_menu_navbar">
@@ -94,7 +91,7 @@
         </div>
         <div class="main-nav-contents">EXHIBITION</div>
         <div class="main-nav-contents">AUCTIONS <i class="fa-solid fa-caret-down"></i></div>
-        <div class="main-nav-contents">LOGIN</div>
+        <div class="main-nav-contents" id="main-nav-bar-login">LOGIN</div>
         <div class="main-nav-contents">
             <div class="search-icon-navbar">
               <!------Search-icon--------->
@@ -102,7 +99,7 @@
             </div>
         </div>
         <div class="main-nav-menu">
-            <div class="main-nav-menu-contents">MENU &nbsp;<i class="fa-solid fa-bars"></i>
+            <div id="main_page_menu_btn" class="main-nav-menu-contents">MENU &nbsp;<i class="fa-solid fa-bars"></i>
             </div>
         </div>    
     </div>
@@ -112,21 +109,22 @@
 
     <!-------------------------------Aneesh-----search box------------------------------ --> 
     
-     
-    <div id="modal-body">
+    <div class="modal-body-container">
+        <div id="modal-body">
 
-        <div id="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search-here" placeholder="Search Here">
-             <p id="cross-sign"> &times; </p>
-        </div>
+            <div id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-here" placeholder="Search Here">
+                <p id="cross-sign"> &times; </p>
+            </div>
 
-        <div id="recent-search">
-            <h4 id="title">Your Recent Searches</h4>
+            <div id="recent-search">
+                <h4 id="title">Your Recent Searches</h4>
+            </div>
         </div>
     </div>
 
 
-    
+    <script src="javascriptAtul.js"></script>
 </body>
 </html>
