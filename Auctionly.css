@@ -15,6 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px 16px 50px 16px;
+    display: none;
 }
 
 .login_content{
@@ -122,4 +123,103 @@ form input:focus{
     font-size: 14px;
     text-align: center;
     letter-spacing: .7px;
+}
+
+
+.inside_menu{
+    height: 100vh;
+    width: 100%;
+}
+.inside_menu_navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 100%;
+}
+
+.inside_menu_navbar_img{
+    height: 50%;
+    width: 9%;
+    background-color: black;
+    position: relative;
+    left: -40%;
+    color: white;
+}
+
+.inside_menu_navbar_close{
+    font-size: 2.4rem;
+    color: black;
+    position: relative;
+    right: -41%;
+}
+
+.inside_menu_navbar_close:hover{
+    cursor: pointer;
+}
+
+.inside_menu_box{
+    margin-top: 2vh;
+    margin-left: 4vh;
+    display: flex;
+    height: 42vh;
+    width: 96%;
+}
+
+.inside_menu_boxes{
+    height: 100%;
+    width: 25%;
+    margin: 1px;
+    background-color: #EAEEF2;
+}
+
+.inside_menu_boxes h3{
+    color: #B45156;
+}
+
+.inside_menu_boxes p{
+    position: relative;
+    top: 29px;
+    color: #7E8082;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.inside_menu_boxes_content{
+    margin: 48px 6px 48px 48px;
+    height: 60%;
+    width: 80%;
+}
+
+.inside_menu_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10%;
+
+}
+
+.inside_menu_buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 216px;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2d2d2d;
+    color: white;
+}
+
+#inside_menu_signIn{
+    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
+}
+
+#inside_menu_space{
+    background-color: transparent;
+    width: 20%;
 }
