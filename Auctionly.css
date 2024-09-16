@@ -129,6 +129,7 @@ form input:focus{
 .inside_menu{
     height: 100vh;
     width: 100%;
+    display: none;
 }
 .inside_menu_navbar{
     display: flex;
@@ -222,4 +223,111 @@ form input:focus{
 #inside_menu_space{
     background-color: transparent;
     width: 20%;
+}
+
+/*********************ARNAV KA CSS ********************************** */
+
+.main-nav-bar{
+    position: relative;
+    height: 82px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.main-nav-contents{
+    left: 20%;
+    position: relative;
+    justify-items: center;
+}
+
+.main-nav-contents:hover{
+    color: #EC1B24;
+    cursor: pointer;
+    font-weight: 600;   
+}
+
+
+.main-nav-menu{
+    height: 100%;   
+    background-color: #1F2A52;
+    color: #ffffff;
+    position: relative;
+    left: 27.7%;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
+.main-nav-menu:hover{
+    cursor: pointer;
+    
+}
+
+.main-nav-bar-logo{
+    height: 30px;
+    width: 70px;
+    background-color: beige;
+    position: relative;
+    right: 20%;
+    font-size: xx-small;
+}
+
+.neela-dabba{
+    background-color:#1F2A52 ;
+    height: 550px;
+    width:442px ;
+    position: relative;
+    bottom: 82px;
+    z-index: -1;
+}
+
+
+
+/* ----------------------------------Aneesh -styling for search box ------------------------------ */
+
+
+#modal-body{
+    height: 700px;
+    width: 550px;
+    background-color: #e9e7ea;
+    padding: 30px 25px 30px 25px;
+    margin-left: 919px;
+    display: none;
+}
+
+#recent-search{
+    height: 39px;
+    width: 510px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    
+}
+
+#search{
+    height: 40px;
+    width: 551px;
+    border-bottom: 2px dashed black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search-here{
+    height: 40px;
+    width: 450px;
+    border-radius: 4px;
+    background-color:#e9e7ea;
+    border: none;
+    outline: none;
+}
+
+#cross-sign{
+    font-size: 2rem;
 }
