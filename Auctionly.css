@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
     letter-spacing: .6px;
 }
 
@@ -22,8 +23,8 @@
 }
 
 .login_main_box{
-    height: 473px;
-    width: 716px;
+    height: 80vh;
+    width: 50vw;
     background-image: url(/Auctionly/images/login_background.png);
     background-size: cover;
     position: absolute;
@@ -155,6 +156,7 @@ form input:focus{
     letter-spacing: .7px;
 }
 
+/* -------------------inside menu by A.K---------------------------------------- */
 
 .inside_menu{
     height: 100vh;
@@ -262,6 +264,10 @@ form input:focus{
     color: white;
 }
 
+.inside_menu_buttons div:hover{
+    cursor: pointer;
+}
+
 #inside_menu_signIn{
     background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
 }
@@ -269,6 +275,7 @@ form input:focus{
 #inside_menu_space{
     background-color: transparent;
     width: 20%;
+    cursor: default;
 }
 
 /*********************ARNAV KA CSS ********************************** */
@@ -301,9 +308,9 @@ form input:focus{
     height: 100%;   
     background-color: #1F2A52;
     color: #ffffff;
-    position: relative;
-    left: 26.5%;
-    width: 190px;
+    position: absolute;
+    right: 0;
+    width: 12.2vw;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -318,8 +325,8 @@ form input:focus{
 .main-nav-bar-logo{
     height: 7vh;
     width: 8vw;
-    position: relative;
-    right: 17%;
+    position: absolute;
+    left: 3vw;
     background-image: url(/Auctionly/images/logo.png);
     background-size: cover;
 }
@@ -327,7 +334,7 @@ form input:focus{
 .neela-dabba{
     background-color:#1F2A52 ;
     height: 550px;
-    width:442px ;
+    width: 34.6vw;
     position: relative;
     bottom: 82px;
     z-index: -1;
@@ -346,6 +353,8 @@ form input:focus{
     background-color:transparent;
     border-radius: 50%;
     padding: 8px;
+    position: relative;
+    right: 1.5vw;
 }
 
 
@@ -381,50 +390,64 @@ form input:focus{
 }
 
 #modal-body{
-    height: 700px;
-    width: 550px;
-    background-color: #e9e7ea;
+    height: 100vh;
+    width: 40.3vw;
+    background-color: #EAEEF2;
     padding: 30px 25px 30px 25px;
-    margin-left: 919px;
-    /* display: none; */
+    position: absolute;
+    right: 0;
 }
 
 #recent-search{
-    height: 39px;
-    width: 510px;
+    height: 12vh;
+    width: 36vw;
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
+    border-radius: 4px;
+    margin-top: 5vh;
     
 }
 
 #search{
     height: 40px;
     width: 551px;
-    border-bottom: 2px dashed black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+#search i{
+    position: absolute;
+    left: 2.5vw;
+    color: #A9AEB4;
+    font-size: larger;
+}
+
+#search p{
+    position: absolute;
+    right: 2.5vw;
+    font-size: 3rem;
+    color: #A9AEB4;
+
+}
+
 #search-here{
-    height: 40px;
-    width: 450px;
+    height: 7vh;
+    width: 36vw;
     border-radius: 4px;
-    background-color:#e9e7ea;
+    background-color: #EAEEF2;
     border: none;
+    border-bottom: 1px dashed #C8B290;
     outline: none;
+    text-indent: 4vw;
+    color: #A9AEB4;
 }
 
-#cross-sign{
-    font-size: 2rem;
+#search-here:focus{
+    color: black;
 }
 
-#cross-sign:hover{
+#search p:hover{
     cursor: pointer;
-}
-
-#cross-sign:active{
-    opacity: 0.5;
+    color: black;
 }
