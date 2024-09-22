@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auctionly</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="">
+    <link rel="icon" href="/Auctionly/images/mainLogo (2).jpg">
     <link rel="stylesheet" href="Auctionly.css">
 </head>
 <body>
@@ -14,19 +14,19 @@
     <div class="atul_login_box">
         <div class="login_main_box" id="login_main_box">
             <!-- logo text img -->
-            <div class="login_comp_img"></div>
+            <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
             <!-- login content -->
             <div class="login_content">
                 <span id="login_content_description">Sign Up & Login to get started</span>
                 <i class="fa-solid fa-xmark" id="login_close"></i>
                 <div class="login_content_heading">
-                    <button>CREATE AN ACCOUNT</button>
-                    <button>SIGN IN</button>
+                    <button class="login_content_heading1">CREATE AN ACCOUNT</button>
+                    <button class="login_content_heading2">SIGN IN</button>
                 </div>
                 <!-- sign up or login form -->
                 <form>
                     <input id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input id="sss" type="password" placeholder="Enter Password" required>
+                    <input id="login_pswd" type="password" placeholder="Enter Password" required>
                     <a href="#" id="forget_password">Forget Password?</a>
                     <p id="otp">Sign in using <b>OTP</b></p>
                     <div class="login_button_div">
@@ -47,7 +47,7 @@
             <div class="inside_menu_boxes" id="inside_menu_boxes1">
                 <div class="inside_menu_boxes_content">
                     <h3>ABOUT US</h3>
-                    <p>About Auctionly</p>
+                    <a href="/Auctionly/aboutauctionly.html"><p>About Auctionly</p></a>
                 </div>
             </div>
             <div class="inside_menu_boxes" id="inside_menu_boxes2">
@@ -86,9 +86,9 @@
 
     <!-------------------------------Arnav-Backdrdop----------------------------------------------------->
     <div class="main-nav-bar">
-        <div class="main-nav-bar-logo">
+        <a href="/Auctionly/Auctionly.html"><div class="main-nav-bar-logo">
             <!------- dega icon ---------------->
-        </div>
+        </div></a>
         <div class="main-nav-contents main-nav-contents3">EXHIBITION</div>
         <div class="main-nav-contents main-nav-contents3">AUCTIONS <i class="fa-solid fa-caret-down"></i></div>
         <div class="main-nav-contents main-nav-contents3" id="main-nav-bar-login">LOGIN &nbsp;&nbsp;&nbsp;&nbsp;</div>
@@ -123,6 +123,56 @@
         </div>
     </div>
 
+
+
+<!-- -------------------------------slides-A.K---------------------------------------------- -->
+
+    <div class="slide_container">
+        <div class="slides">
+            <img src="/Auctionly/images/05092024_050259_giftex-jan24-homeweb1.jpg" class="active">
+            <img src="/Auctionly/images/05092024_050425_Collectibles-may24-web_home-3.jpg">
+            <img src="/Auctionly/images/06232024_064921_Collectibles-Auction-june24.jpg">
+            <img src="/Auctionly/images/08082024_035516_12home-aug24.jpg">
+        </div>
+        <div class="slides_border">
+            <div class="slides_border_active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="slides_content">
+            <span class="text_active slides_content_descrip">
+                <h6>Auctionly</h6>
+                <h3>A WORLD OF COLLECTIBLES AUCTION</h3>
+                <P>Sept 25 - 30, 2024</P>
+                <button>VIEW RESULTS</button>
+            </span>
+            <span class="slides_content_descrip">
+                <h6>Auctionly</h6>
+                <h3>A WORLD OF COLLECTIBLES AUCTION</h3>
+                <P>Sept 21 - 24, 2024</P>
+                <button>VIEW RESULTS</button>
+            </span>
+            <span class="slides_content_descrip">
+                <h6>Auctionly</h6>
+                <h3>A WORLD OF COLLECTIBLES AUCTION</h3>
+                <P>Oct 02 - 07, 2024</P>
+                <button>VIEW RESULTS</button>
+            </span>
+            <span class="slides_content_descrip">
+                <h6>Auctionly</h6>
+                <h3>A WORLD OF COLLECTIBLES AUCTION</h3>
+                <P>Oct 08 - 13, 2024</P>
+                <button>VIEW RESULTS</button>
+            </span>
+        </div>
+        <span id="next_btn">&#10095</span>
+    </div>
+
+
+    <div style="height: 100vh; width: 100%; background-color: antiquewhite;"></div>
+
+    </div>
 
     <script src="javascriptAtul.js"></script>
 </body>

@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+a:active{
+    cursor: wait;
+}
+
 .atul_login_box{
     height: 100vh;
     width: 100vw;
@@ -343,8 +347,8 @@ form input:focus{
 
 .neela-dabba{
     background-color:#1F2A52 ;
-    height: 550px;
-    width: 34.6vw;
+    height: 72vh;
+    width: 39.7vw;
     position: relative;
     bottom: 82px;
     z-index: -1;
@@ -468,143 +472,300 @@ form input:focus{
 .slide_container{
     display: flex;
     position: absolute;
-    top: 46%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 58vh;
-    width: 100vw;
-}
-
-#next_btn{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    color: transparent;
+    height: 50vh;
+    width: 90vw;
 }
 
 .slide_container .slides{
     height: 87%;
-    width: 42%;
-    position: relative;
-    top: 3.9vh;
-    left: 6.8vw;
-    overflow: hidden;
+    width: 36%;
+    position: absolute;
+    top: 6.7%;
+    left: 10.7%;
+    background-image: url(/Auctionly/images/ab.webp);
+    background-size: cover;
+    border: 9px solid #1F2A52;
 }
 
 .slide_container .slides_border{
     height: 97%;
-    width: 29.1%;
+    width: 29.5%;
     position: relative;
-    right: 36%;
+    left: 9.55%;
     top: 1.6%;
     z-index: -1;
-    overflow: hidden;
-
-}
-
-.slide_container .slides_border div:not(.slides_border_active){
-    top: 0;
-    left: -100%;
-}
-
-.slide_container .slides_border div{
-    height: 100%;
-    width: 100%;
-    position: absolute;
     background: linear-gradient(to right, #475071, #313C60);
-}
 
+}
 
 .slide_container .slides_content{
     height: 100%;
     width: 50%;
     position: absolute;
-    top: 0;
+    top: 25%;
     right: 0;
-    overflow: hidden;
-
-}
-
-.slide_container .slides_content span{
     font-size: 1rem;
+
+}
+
+.slides_content h3{
     position: absolute;
-}
-
-.slide_container .slides_content span:not(.text_active){
-    top: 0;
-    left: -100%;
-}
-
-.slide_container .slides img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    border: 9px solid #1F2A52;
-    
-}
-
-.slide_container .slides img:not(.active){
-    top: 0;
-    left: -100%;
-}
-
-.slides_content span button{
-    position: relative;
-    top: 6.5vh;
-    border: none;
-    border-radius: 15px;
-    padding: 14px 20px 14px 20px;
-    color: white;
-    font-weight: bolder;
-    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
-}
-
-.slides_content span button:hover{
-    cursor: pointer;
-}
-
-.slides_content_descrip{
-    padding: 2.1vw;
-}
-
-.slides_content_descrip h6{
-    font-size: 0.875rem;
-    color: #3c5233;
-    letter-spacing: 2px;
-    margin-top: 12vh;
-}
-
-.slides_content_descrip h3{
-    position: relative;
-    top: 0.4vh;
-    font-size: 1.875rem;
+    top: 5%;
+    margin-left: 20%;
+    font-size: 3.125rem;
     font-weight: 700;
     letter-spacing: 0.88px;
+    color: #000;
 }
 
-.slides_content_descrip p{
-    position: relative;
-    top: 2vh;
-    font-size: 0.875rem;
-    color: #747474;
+.slides_content h6{
+    position: absolute;
+    top: 27%;
+    margin-left: 20%;
+    font-size: 1rem;
+    color: #b45156;
+}
+
+.who_we_are1{
+    height: auto;
+    width: 100vw;
+}
+
+.who_we_are1 span{
+    margin-left: 7.5%;
+    font-size: 1.25rem;
     font-weight: 600;
+    color: #2d2d2d;
 }
 
-@keyframes next1 {
-    from{
-        left: 0%;
-    }
-    to{
-        left: -200%;
-    }
+.who_we_are1 span div{
+    display: inline-block;
+    height: 1.3px;
+    width: 310px;
+    position: relative;
+    left: 1%;
+    margin-bottom: 5px;
+    background-color: #3c5233;
 }
 
-@keyframes next2 {
-    from{
-        left: 200%;
-    }
-    to{
-        left: 0%;
-    }
+.who_we_are1 h3{
+    font-size: 2.5rem;
+    padding-left: 14vw;
+    margin-top: 10px;
+}
+
+.who_we_are1 p{
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2d2d2d;
+    padding-left: 14vw;
+    padding-right: 13vw;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+#who_we_are2{
+    margin-top: 10px;
+}
+
+#who_we_are2 p{
+    text-align: right;
+    position: relative;
+    color: #373737;
+    font-weight: 500;
+    font-size: 1.2rem;
+    top: 15.5vh;
+    right: 1vw;
+}
+
+#who_we_are2 h3{
+    text-align: right;
+    position: relative;
+    top: 15vh;
+    right: 14%;
+}
+
+#who_we_are2 span{
+    position: absolute;
+    right: 7%;
+    margin-top: 9vh;
+}
+
+
+.who_we_are_blueBox{
+    height: 147vh;
+    width: 50vw;
+    background-color: #f7fafd;
+    position: absolute;
+    top: 72%;
+    left: 38.5%;
+    z-index: -1;
+}
+
+.who_we_are_blueBox img{
+    position: absolute;
+    right: -9%;
+    top: -5%;
+    height: 13vh;
+}
+
+.our_values{
+    height: 95vh;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.our_values div{
+    position: relative;
+    width: calc(100%-15.99%);
+    height: 100%;
+    margin-left: 15.99%;
+}
+
+.our_values .blue_box{
+    position: relative;
+    bottom: 100%;
+    width: 40%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 28%;
+    background-color: #f7fafd;
+}
+
+.our_values p{
+    position: relative;
+    left: 43%;
+    bottom: 150%;
+    width: 50%;
+    color: #373737;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.our_values .fa-chevron-right{
+    position: relative;
+    right: 5%;
+    color: #6D905D;
+    font-size: 20px;
+}
+
+.our_values p span{
+    font-size: 40px;
+    color: rgb(44, 69, 44);
+}
+
+.our_values h3{
+    font-size: 2.5rem;
+    position: relative;
+    left: 30%;
+    top: 14%;
+}
+
+.our_values span div{
+    display: inline-block;
+    height: 1.3px;
+    width: 310px;
+    position: relative;
+    left: -12%;
+    bottom: 1%;
+    background-color: #3c5233;
+}
+
+.our_values span{
+    position: relative;
+    top: 10%;
+    right: 12%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+
+/* -------------------------------------------founders--------------------------------------- */
+
+.founders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.founders .founder_header{
+    display: flex;
+    gap: 8%;
+    height: 8vh;
+}
+
+.founders .founder_header div{
+    display: inline-block;
+    height: 1.3px;
+    width: 30vw;
+    background-color: #3c5233;
+    position: relative;
+    top: 45%;
+}
+
+.founders .founder_header h3{
+    font-size: 2.5rem;
+}
+
+.founders .founders_box{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    height: 79%;
+    width: 100%;
+    margin-top: auto;
+}
+
+.founders_box .founders_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 28%;
+}
+
+.founders_box .founders_info .founders_info_photo{
+    height: 48%;
+    width: 48%;
+    border: 1px dashed black;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.founders_box .founders_info .founders_details{
+    margin-top: auto;
+    margin-bottom: 6%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.31rem;
+}
+
+.founders_info_blu_box{
+    position: absolute;
+    z-index: 0;
+    margin-top: 7%;
+    height: 43%;
+    width: 27.8%;
+    background-color: #EAEEF2;
+}
+
+.founders_name{
+    font-size: 1.375rem;
+    color: #2d2d2d;
+}
+
+.founders_post, .founders_email{
+    font-size: 0.875rem;
+    color: #2d2d2d;
 }
