@@ -21,7 +21,7 @@ a{
     visibility: hidden;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .popUPOfLoginBox{
@@ -290,14 +290,16 @@ form input:focus{
 /*********************ARNAV KA CSS ********************************** */
 
 .main-nav-bar{
-    position: relative;
+    position: fixed;
     height: 82px;
     width: 100%;
+    z-index: 1;
     display: flex; 
     justify-content: center;
     align-items: center;
     gap: 2%;
-
+    transition: background-color 0.4s ease;
+    background-color: transparent;
 }
 
 .main-nav-contents{
@@ -343,7 +345,7 @@ form input:focus{
 
 .neela-dabba{
     background-color:#1F2A52 ;
-    height: 550px;
+    height: 635px;
     width: 34.6vw;
     position: relative;
     bottom: 82px;

@@ -14,6 +14,25 @@ let login_content_heading1 = document.querySelector(".login_content_heading1");
 let login_content_heading2 = document.querySelector(".login_content_heading2");
 
 
+// fixed pos of menu bar
+window.onscroll = function() {scrollNavBar()};
+
+function scrollNavBar() {
+    const mainPgNavBar = document.querySelector("#main-nav-bar");
+    const mainPgNavBarLogo = document.querySelector(".main-nav-bar-logo")
+
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
+        mainPgNavBar.style.backgroundColor = "white";
+        mainPgNavBar.style.boxShadow = "0 4px 5px rgba(0, 0, 0, 0.1)";
+        mainPgNavBarLogo.style.backgroundColor = "rgb(0, 0, 0, 0.6)";
+    } else {
+        mainPgNavBar.style.backgroundColor = "transparent";
+        mainPgNavBarLogo.style.backgroundColor = "";
+        mainPgNavBar.style.boxShadow = "";
+    }
+}
+
+
 main_page_menu_btn.addEventListener("click", () => {
     inside_menu.classList.add("popUPOfInsideMenu");
 })
