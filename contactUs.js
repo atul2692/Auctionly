@@ -33,26 +33,19 @@ function scrollNavBar() {
 }
 
 
-
-
-
 main_page_menu_btn.addEventListener("click", () => {
-    console.log("clicked");
     inside_menu.classList.add("popUPOfInsideMenu");
 })
 
 inside_menu_navbar_close.addEventListener("click", () => {
-    console.log("clicked");
     inside_menu.classList.remove("popUPOfInsideMenu");
 })
 
 search_icon_navbar.addEventListener("click", () => {
-    console.log("clicked");
     modal_body_container.classList.add("popUPOfSearch");
 })
 
 search_search_closeBtn.addEventListener("click", () => {
-    console.log("clicked");
     modal_body_container.classList.remove("popUPOfSearch");
 })
 
@@ -79,41 +72,3 @@ login_main_box_closeBtn.addEventListener("click", () => {
     login_main_box.classList.remove("popUPOfLoginBox");
 })
 
-// ______________________________________________slides A.K_________________________________________
-
-//  selecting images of slides
-let slideImages = document.querySelectorAll(".slide_container .slides img");
-let slideNextBtn = document.getElementById("next_btn");
-let span = document.querySelectorAll(".slides_content span");
-let slides_border = document.querySelectorAll(".slides_border div");
-
-var counter = 0;
-
-slideNextBtn.addEventListener("click",slideNext);
-
-function slideNext() {
-    slideImages[counter].style.animation = "next1 0.5s ease-in forwards";
-    slides_border[counter].style.animation = "next1 0.5s ease-in forwards";
-    span[counter].style.animation = "next1 0.5s ease-in forwards";
-    if (counter >= slideImages.length-1){
-        counter = 0;
-    }
-    else{
-        counter++ ;
-    }
-    slideImages[counter].style.animation = "next2 0.5s ease-in forwards";
-    span[counter].style.animation = "next2 0.5s ease-in forwards";
-    slides_border[counter].style.animation = "next2 0.5s ease-in forwards";
-}
-
-
-
-
-function autoPlay() {
-    delInterval = setInterval(timer, 5000);
-    function timer() {
-        slideNext();
-    }
-}
-
-autoPlay();

@@ -26,7 +26,7 @@ a{
 
 .popUPOfLoginBox{
     visibility: visible;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -179,7 +179,7 @@ form input:focus{
 
 .popUPOfInsideMenu{
     visibility: visible;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -386,8 +386,7 @@ form input:focus{
 
 .popUPOfSearch{
     visibility: visible;
-    position: absolute;
-    transform: scale(1);
+    position: fixed;
     top: 0;
     left: 0%;
     animation-name: ffff;
@@ -543,7 +542,6 @@ form input:focus{
     object-fit: cover;
     position: absolute;
     border: 9px solid #1F2A52;
-    
 }
 
 .slide_container .slides img:not(.active){
@@ -609,4 +607,325 @@ form input:focus{
     to{
         left: 0%;
     }
+}
+
+/********************upcoming-arnav**************************/
+
+.upcoming-auctions-dabba{
+    height: 60vh;
+    width: 75%;
+    background-color: white;
+    position: absolute;
+    top: 80vh;
+    right: 0%;
+}
+
+
+.photo-auctions{
+    height: 100%;
+    width: 65%;
+    position: absolute;
+    left: 0;
+    background-color: #B45156;
+    background-image: url(/Auctionly/images/coming-soon-banner-1.avif);
+    background-size: cover;
+}
+
+.photo-auctions:hover{
+    cursor: pointer;
+}
+
+.photo-side-upcoming-text{
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    left: 68%;
+    top: 40%;
+}
+
+
+.view-all-button{
+    display: flex;
+    position: absolute;
+    left: 68%;
+    height: 7vh;
+    width: 140px;
+    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
+    top: 55%;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    border-radius: 14px;
+    font-weight: 600;
+    padding-left: 28px;
+}
+
+.view-all-button:hover{
+    cursor: pointer;
+}
+
+.had-to-do-this{
+    height: 60vh;
+    width: 100%;
+}
+
+.pink-dabba-htb{
+    height: 26vh;
+    width: 50%;
+    background-color: #F3E8E9;
+    display: flex;
+}
+
+.logo-cart-pink{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: normal;
+    position: relative;
+    left: 12.5%;
+    font-size: 2.7rem;
+
+}
+
+.blue-dabba-hts{
+    height: 26vh;
+    width: 50%;
+    background-color: #EAEEF2;
+    display: flex;
+    position: absolute;
+    right: 0%;
+}
+
+.blue-dabba-text{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: normal;
+    position: relative;
+    left: 20%;
+    font-size: 2.7rem;
+}
+
+.blue-dabba-text:hover{
+    cursor: pointer;
+}
+
+.logo-cart-pink:hover{
+    cursor: pointer;
+}
+
+.had-to-do-this-again{
+    height: 26vh;
+    width: 100%;
+}
+
+.newsletter-box{
+    height: 34vh;
+    width: 100%;
+    position: relative;
+    top: 20vh;
+}
+
+.newsletter-box-contents{
+    height: 100%;
+    width: 90%;
+    background-color: #F3E8E9;
+    position: relative;
+    left: 5%;
+}
+
+.subscribe-text{
+    font-size: xx-large;
+    display: flex;
+    gap: 20px;
+    padding-top: 2.5%
+}
+
+.red-text-subscribe{
+    color: #b45156;
+    position: relative;
+    padding-left: 25%;
+    font-weight: 900;
+}
+
+.our-text-subscribe{
+    font-weight: 900;
+}
+
+
+.input-details-nl{
+    display: flex;
+    position: relative;
+    left: 15%;
+    top: 10%;
+}
+
+.wrapper{
+    width: 450px;
+    background: #F3E8E9;
+    padding: 30px;
+  }
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background-color: #F3E8E9;
+}
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+  background: #F3E8E9;
+  outline: none;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+}
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.1s ease;
+  
+}
+.input-data .underline{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.1s ease;
+}
+.submit-button-letterbox{
+    height:7vh;
+    width: 12%;
+    left: 45%;  
+    position: relative;
+    top: 20%;
+    font-weight: bolder;
+}  
+
+.submit-button-letterbox:hover{
+    cursor: pointer;
+}
+
+.button-text{
+    background:  linear-gradient(to right, #b45156 0%, #e74b52 100%);
+    color: white;
+    position: relative;
+    top: -1vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    border-radius: 14px;
+    padding-left: 27%;
+}
+
+.neela-dabba-footer{
+    height: 110vh;
+    width: 100%;
+    background-color: #1F2A52;
+    position: relative;
+    z-index: -1;
+}
+
+.footer {
+    position: relative;
+    top: 30vh;
+    background-color: #1F2A52;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.left-section {
+    width: 45%;
+}
+
+.left-section .logo {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.left-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: lighter;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+
+
+.app-links img {
+    width: 120px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.column {
+    margin-right: 20px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-buttons{
+    position: relative;
+}
+
+.footer-buttons:hover{
+    cursor: pointer;
 }
