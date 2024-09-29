@@ -744,9 +744,21 @@ form input:focus{
     height: 48%;
     width: 48%;
     border: 1px dashed black;
-    background-color: white;
     position: relative;
     z-index: 1;
+}
+
+#chairman_pic{
+    background-image: url(/Auctionly/images/Chairman.jpg);
+    background-size: cover;
+}
+#ceo_photo{
+    background-image: url(/Auctionly/images/CEO.jpg);
+    background-size: cover;
+}
+#coo_photo{
+    background-image: url(/Auctionly/images/COO.jpg);
+    background-size: cover;
 }
 
 .founders_box .founders_info .founders_details{
