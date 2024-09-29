@@ -12,6 +12,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #7E8082;
 }
 
 .atul_login_box{
@@ -270,6 +271,10 @@ form input:focus{
     font-size: 16px;
     font-weight: 600;
     background-color: #2d2d2d;
+    color: white;
+}
+
+.inside_menu_buttons div a{
     color: white;
 }
 
