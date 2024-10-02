@@ -92,18 +92,18 @@ var counter = 0;
 slideNextBtn.addEventListener("click",slideNext);
 
 function slideNext() {
-    slideImages[counter].style.animation = "next1 0.5s ease-in forwards";
-    slides_border[counter].style.animation = "next1 0.5s ease-in forwards";
-    span[counter].style.animation = "next1 0.5s ease-in forwards";
+    slideImages[counter].style.animation = "outgoing 0.5s ease-in forwards";
+    slides_border[counter].style.animation = "outgoing 0.5s ease-in forwards";
+    span[counter].style.animation = "outgoing 0.5s ease-in forwards";
     if (counter >= slideImages.length-1){
         counter = 0;
     }
     else{
         counter++ ;
     }
-    slideImages[counter].style.animation = "next2 0.5s ease-in forwards";
-    span[counter].style.animation = "next2 0.5s ease-in forwards";
-    slides_border[counter].style.animation = "next2 0.5s ease-in forwards";
+    slideImages[counter].style.animation = "incoming 0.5s ease-in forwards";
+    span[counter].style.animation = "incoming 0.5s ease-in forwards";
+    slides_border[counter].style.animation = "incoming 0.5s ease-in forwards";
 }
 
 

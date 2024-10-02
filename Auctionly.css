@@ -596,7 +596,7 @@ form input:focus{
     font-weight: 600;
 }
 
-@keyframes next1 {
+@keyframes outgoing {
     from{
         left: 0%;
     }
@@ -605,7 +605,7 @@ form input:focus{
     }
 }
 
-@keyframes next2 {
+@keyframes incoming {
     from{
         left: 200%;
     }
