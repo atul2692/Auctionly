@@ -11,22 +11,23 @@
 <body>
 
 <!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-    <div class="atul_login_box">
-        <div class="login_main_box" id="login_main_box">
-            <!-- logo text img -->
-            <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
-            <!-- login content -->
-            <div class="login_content">
-                <span id="login_content_description">Sign Up & Login to get started</span>
-                <i class="fa-solid fa-xmark" id="login_close"></i>
-                <div class="login_content_heading">
-                    <button class="login_content_heading1">CREATE AN ACCOUNT</button>
-                    <button class="login_content_heading2">SIGN IN</button>
-                </div>
-                <!-- sign up or login form -->
-                <form>
-                    <input id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input id="login_pswd" type="password" placeholder="Enter Password" required>
+<div class="atul_login_box">
+    <div class="login_main_box" id="login_main_box">
+        <!-- logo text img -->
+        <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
+        <!-- login content -->
+        <div class="login_content">
+            <span id="login_content_description">Sign Up & Login to get started</span>
+            <i class="fa-solid fa-xmark" id="login_close"></i>
+            <div class="login_content_heading">
+                <button class="login_content_heading1">CREATE AN ACCOUNT</button>
+                <button class="login_content_heading2">SIGN IN</button>
+            </div>
+            <!-- sign up or login form -->
+            <div class="signup_box">
+                <form class="form_for_signUp">
+                    <input class="input_formatting" id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
+                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Enter Password" required>
                     <a href="#" id="forget_password">Forget Password?</a>
                     <p id="otp">Sign in using <b>OTP</b></p>
                     <div class="login_button_div">
@@ -34,9 +35,26 @@
                     </div>
                 </form>
             </div>
+
+            <!-- create acc -->
+            <div class="createAcc_box">
+                
+                <form class="form_for_createAcc">
+                    <input class="input_formatting" id="for_input_margin_createAcc" type="text"  placeholder="Name" required>
+                    <input class="input_formatting" id="for_input_margin_createAcc" type="email"  placeholder="Email" required>
+                    <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required>
+                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Set Password" required>
+                    <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span> 
+                    <div class="login_button_div">
+                        <button id="login_button">GET STARTED</button>
+                    </div>
+                </form>
+            </div>
+        
         </div>
     </div>
-    
+</div>
+
 
     <div class="inside_menu">
         <div class="inside_menu_navbar">
@@ -135,16 +153,16 @@
         <div class="department-heading-2">
             <h6>DEPARTMENTS</h6>
         </div>
-        <div class="para-department"><p>With 37 years of experience, Auctionly is a premier platform catering to buyers<br>
-           and sellers of luxury gifting products and stationery. With the expanding and <br>
+        <div class="para-department"><p>With 1 month of experience, Auctionly is a premier platform catering to buyers<br>
+           and sellers of luxury products, stationery, Automobiles etc. With the expanding and <br>
            diverse needs of our clients, we too have evolved to now provide an auction <br>
            platform that showcases a meticulously curated assemblage of limited <br>
            edition and rare collectibles.<br><br>
 
            With over 10 specialist departments, Giftex offers a seamless service for<br>
-           buying and selling Art, jewellery, Watches, Textiles, Memorabilia, Silver,<br>
-           Furniture and Decorative, Writing Instruments, Books, Luxury, Natural History,<br>
-           Stamps and Numismatic.</p>
+           buying and selling Art, jewellery, Watches, Textiles, Memorabilia, Property,<br>
+           Furniture and Decorative, Writing Instruments, Books, Luxury, Natural History and<br>
+           Automobiles.</p>
         </div>   
     </div>
 </div>
@@ -169,12 +187,12 @@
     </div>
     <br><br>
     <div class="line-3">
-        <img src="/Auctionly/images/philately.png">
+        <img src="/Auctionly/images/department-automobile.jpg">
         <img src="/Auctionly/images/rare books.png">
     </div>
     <div class="line-3-text">
-        <div class="line-text-1">Philately And Numismatics </div>
-        <div class="line-text-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rare books And Manuscripts</div>
+        <div class="line-text-1">Automobiles</div>
+        <div class="line-text-2" style="position: relative; left: 12vw;">Rare books And Manuscripts</div>
     </div>
     <br><br>
     <div class="line-4">
@@ -188,11 +206,11 @@
     <br><br>
     <div class="line-5">
         <img src="/Auctionly/images/fine-writing.png">
-        <img src="/Auctionly/images/silver.png">
+        <img src="/Auctionly/images/department-property.jpeg">
     </div>
     <div class="line-5-text">
         <div class="line-text-1">Fine Writing Instruments</div>
-        <div class="line-text-2">&nbsp;&nbsp;&nbsp;&nbsp;Silver</div>
+        <div class="line-text-2">&nbsp;&nbsp;&nbsp;&nbsp;Property</div>
     </div>
     <br><br>
     <div class="line-6">
@@ -257,7 +275,7 @@
         <div class="footer-content">
             <div class="left-section">
                 <img src="/Auctionly/images/logo.png" alt="Company Logo" class="logo">
-                <p>Auctionly, with its 37 years of pioneering experience in the gifting industry is launching its first online auction. Explore products ranging from fine writing instruments, jewelry, textiles, art, and more.</p>
+                <p>Auctionly, with its 1 month of pioneering experience in the Online Auction industry. Explore products ranging from fine writing instruments, jewelry, textiles, art, and more.</p>
                 <p>The online auction is set to foster collaboration and open doors to exciting new possibilities in the world of gifting.</p><br>
                 <div class="social-icons">
                     <div class="follow-us-on-text">FOLLOW US ON</div><br>
@@ -290,12 +308,12 @@
                         <div class="footer-buttons"><li><a href="#">Furniture And Decorative Arts</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Arts</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Timepieces</a></li><br></div>
-                        <div class="footer-buttons"><li><a href="#">Numismatics And Philately</a></li><br></div>                        
+                        <div class="footer-buttons"><li><a href="#">Automobiles</a></li><br></div>                        
                         <div class="footer-buttons"><li><a href="#">Rare Books And Manuscripts</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Memorabilia</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Textiles</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Fine Writing Instruments</a></li><br></div>
-                        <div class="footer-buttons"><li><a href="#">Silver</a></li><br></div>
+                        <div class="footer-buttons"><li><a href="#">Property</a></li><br></div>
                         <div class="footer-buttons"><li><a href="#">Luxury</a></li><br></div>
                     </ul>
                 </div>
