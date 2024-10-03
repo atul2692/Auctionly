@@ -12,7 +12,10 @@ let inside_menu = document.querySelector(".inside_menu");
 let inside_menu_navbar_close = document.querySelector(".inside_menu_navbar_close");
 let login_content_heading1 = document.querySelector(".login_content_heading1");
 let login_content_heading2 = document.querySelector(".login_content_heading2");
-
+let signup_box = document.querySelector(".signup_box");
+let login_main_box_inner = document.querySelector(".login_main_box");
+let login_content = document.querySelector(".login_content");
+let createAcc_box = document.querySelector(".createAcc_box");
 
 // fixed pos of menu bar
 window.onscroll = function() {scrollNavBar()};
@@ -31,7 +34,6 @@ function scrollNavBar() {
         mainPgNavBar.style.boxShadow = "";
     }
 }
-
 
 
 
@@ -59,23 +61,36 @@ search_search_closeBtn.addEventListener("click", () => {
 
 arnav_login.addEventListener("click", () => {
     login_main_box.classList.add("popUPOfLoginBox");
+    signup_box.classList.add("popUPOfsignUpBox");
     login_content_heading2.id =  "login_content_heading_formatting";
 
 })
 
 login_content_heading1.addEventListener("click",() => {
     login_content_heading2.id =  "";
+    signup_box.classList.remove("popUPOfsignUpBox");
+    login_main_box_inner.classList.add("adjust_login_main_box");
+    login_content.classList.add("adjust_login_content_createAcc");
+    createAcc_box.classList.add("popUPOfcreateAcc");
     login_content_heading1.id = "login_content_heading_formatting";
 })
 
 login_content_heading2.addEventListener("click",() => {
     login_content_heading1.id =  "";
+    signup_box.classList.add("popUPOfsignUpBox");
+    login_main_box_inner.classList.remove("adjust_login_main_box");
+    login_content.classList.remove("adjust_login_content_createAcc");
+    createAcc_box.classList.remove("popUPOfcreateAcc");
     login_content_heading2.id = "login_content_heading_formatting";
 })
 
 login_main_box_closeBtn.addEventListener("click", () => {
     login_content_heading1.id =  "";
     login_content_heading2.id =  "";
+    login_main_box_inner.classList.remove("adjust_login_main_box");
+    signup_box.classList.remove("popUPOfsignUpBox");
+    createAcc_box.classList.remove("popUPOfcreateAcc");
+    login_content.classList.remove("adjust_login_content_createAcc");
     login_main_box.classList.remove("popUPOfLoginBox");
 })
 
@@ -110,7 +125,7 @@ function slideNext() {
 
 
 function autoPlay() {
-    delInterval = setInterval(timer, 5000);
+    delInterval = setInterval(timer, 4000);
     function timer() {
         slideNext();
     }

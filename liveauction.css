@@ -26,7 +26,7 @@ a:active{
     visibility: hidden;
     position: absolute;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .popUPOfLoginBox{
@@ -36,7 +36,8 @@ a:active{
 }
 
 .login_main_box{
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     width: 50vw;
     background-image: url(/Auctionly/images/login_background.png);
     background-size: cover;
@@ -45,6 +46,12 @@ a:active{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px 16px 50px 16px;
+}
+
+.adjust_login_main_box{
+    height: 97vh;
+    width: 50vw;
+    position: absolute;
 }
 
 #login_pswd{
@@ -61,12 +68,39 @@ a:active{
     background-size: cover;
 }
 
+.signup_box{
+    height: auto;
+    width: auto;
+    visibility: hidden;
+}
+
+.popUPOfsignUpBox{
+    visibility: visible;
+}
+
+/* create acc box */
+
+.createAcc_box{
+    position: relative;
+    top: -50%;
+    height: 65vh;
+    visibility: hidden;
+}
+
+.popUPOfcreateAcc{
+    visibility: visible;
+}
 
 .login_content{
-    height: 473px;
-    width: 469px;
+    height: 65vh;
+    width: 64.5%;
     padding: 0px 12px 0px 12px;
-    margin-left: 185px;
+    margin-left: 26%;
+}
+
+.adjust_login_content_createAcc{
+    height: 83vh;
+    margin-left: 28%;
 }
 
 #login_content_description{
@@ -89,6 +123,7 @@ a:active{
     display: flex;
     position: relative;
     top: 50px;
+    z-index: 1;
 }
 
 .login_content_heading button{
@@ -111,11 +146,10 @@ a:active{
     margin-bottom: 25px;
 }
 
-
-form input{
+form .input_formatting{
     border: none;
-    height: 60px;
-    width: 470px;
+    height: 8.5vh;
+    width: 100%;
     font-size: 16px;
     position: relative;
     top: 80px;
@@ -123,6 +157,11 @@ form input{
     margin-bottom:10px ;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     text-indent:35px ;
+}
+
+#login_checkbox{
+    position: relative;
+    top: 15vh;
 }
 
 form input:focus{
@@ -156,7 +195,7 @@ form input:focus{
     font-size: 12px;
     position: relative;
     top: 90px;
-    left: 350px;
+    left: 75%;
     text-decoration: none;
 }
 
