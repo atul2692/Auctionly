@@ -2,8 +2,6 @@
 
 
 let arnav_login = document.querySelector("#main-nav-bar-login");
-let login_main_box = document.querySelector(".atul_login_box");
-let login_main_box_closeBtn = document.querySelector("#login_close");
 let modal_body_container = document.querySelector(".modal-body-container");
 let search_search_closeBtn = document.querySelector("#search p");
 let search_icon_navbar = document.querySelector(".search-icon-navbar");
@@ -59,42 +57,13 @@ search_search_closeBtn.addEventListener("click", () => {
 })
 
 
-arnav_login.addEventListener("click", () => {
-    login_main_box.classList.add("popUPOfLoginBox");
-    signup_box.classList.add("popUPOfsignUpBox");
-    login_content_heading2.id =  "login_content_heading_formatting";
 
-})
 
-login_content_heading1.addEventListener("click",() => {
-    login_content_heading2.id =  "";
-    signup_box.classList.remove("popUPOfsignUpBox");
-    login_main_box_inner.classList.add("adjust_login_main_box");
-    login_content.classList.add("adjust_login_content_createAcc");
-    createAcc_box.classList.add("popUPOfcreateAcc");
-    login_content_heading1.id = "login_content_heading_formatting";
-})
-
-login_content_heading2.addEventListener("click",() => {
-    login_content_heading1.id =  "";
-    signup_box.classList.add("popUPOfsignUpBox");
-    login_main_box_inner.classList.remove("adjust_login_main_box");
-    login_content.classList.remove("adjust_login_content_createAcc");
-    createAcc_box.classList.remove("popUPOfcreateAcc");
-    login_content_heading2.id = "login_content_heading_formatting";
-})
-
-login_main_box_closeBtn.addEventListener("click", () => {
-    login_content_heading1.id =  "";
-    login_content_heading2.id =  "";
-    login_main_box_inner.classList.remove("adjust_login_main_box");
-    signup_box.classList.remove("popUPOfsignUpBox");
-    createAcc_box.classList.remove("popUPOfcreateAcc");
-    login_content.classList.remove("adjust_login_content_createAcc");
-    login_main_box.classList.remove("popUPOfLoginBox");
-})
 
 // ______________________________________________slides A.K_________________________________________
+
+
+
 
 //  selecting images of slides
 let slideImages = document.querySelectorAll(".slide_container .slides img");

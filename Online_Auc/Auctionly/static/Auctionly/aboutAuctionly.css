@@ -15,194 +15,8 @@ a{
     color: #7E8082;
 }
 
-.atul_login_box{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0, 0.5);
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-}
-
-.popUPOfLoginBox{
-    visibility: visible;
-    position: fixed;
-    top: 0;
-}
-
-.login_main_box{
-    min-height: 80vh;
-    height: auto;
-    width: 50vw;
-    background-image: url(/Auctionly/images/login_background.png);
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px 16px 50px 16px;
-}
-
-.adjust_login_main_box{
-    height: 97vh;
-    width: 50vw;
-    position: absolute;
-}
-
-#login_pswd{
-    padding-right: 20px;
-}
-
-.login_comp_img{
-    position: absolute;
-    left: 5%;
-    height: 7vh;
-    width: 8vw;
-    background-color: rgb(0, 0, 0, 0.6);
-    background-image: url(/Auctionly/images/logo.png);
-    background-size: cover;
-}
-
-.signup_box{
-    height: auto;
-    width: auto;
-    visibility: hidden;
-}
-
-.popUPOfsignUpBox{
-    visibility: visible;
-}
-
-/* create acc box */
-
-.createAcc_box{
-    position: relative;
-    top: -50%;
-    height: 65vh;
-    visibility: hidden;
-}
-
-.popUPOfcreateAcc{
-    visibility: visible;
-}
-
-.login_content{
-    height: 65vh;
-    width: 64.5%;
-    padding: 0px 12px 0px 12px;
-    margin-left: 26%;
-}
-
-.adjust_login_content_createAcc{
-    height: 83vh;
-    margin-left: 28%;
-}
-
-#login_content_description{
-    color: #585858;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: .6px;
-}
-
-#login_close{
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    font-size: 25px;
-    color: #585858;
-    cursor: pointer;
-}
-
-.login_content_heading{
-    display: flex;
-    position: relative;
-    top: 50px;
-    z-index: 1;
-}
-
-.login_content_heading button{
-    text-align: center;
-    width: 234px;
-    height: 37px;
-    background-color: transparent;
-    border: none;
-    color: #ababab;
-    border-bottom: 1px solid #ababab;
-    cursor: pointer;
-}
-
-#login_content_heading_formatting{
-    color: #2d2d2d;
-    border-bottom: 2px solid #e74b52;
-}
-
-#for_input_margin{
-    margin-bottom: 25px;
-}
-
-form .input_formatting{
-    border: none;
-    height: 8.5vh;
-    width: 100%;
-    font-size: 16px;
-    position: relative;
-    top: 80px;
-    background-color: #ffffff;
-    margin-bottom:10px ;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    text-indent:35px ;
-}
-
-#login_checkbox{
-    position: relative;
-    top: 15vh;
-}
-
-form input:focus{
-    border: none;
-    outline: none;
-}
-
-.login_button_div{
-    position: relative;
-    top: 115px;
-    height: 117px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-#login_button{
-    height: 50px;
-    width: 270px;
-    border-radius: 15px;
-    border: none;
-    padding: 0px 30px 0px 30px;
-    color: #ffffff;
-    font-weight: 600;
-    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
-    cursor: pointer;
-}
-
-#forget_password{
-    color: #b45156;
-    font-size: 12px;
-    position: relative;
-    top: 90px;
-    left: 75%;
-    text-decoration: none;
-}
-
-#otp{
-    position: relative;
-    top: 145px;
-    left: -5px;
-    color: #2d2d2d;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: .7px;
+a:active{
+    cursor: wait;
 }
 
 /* -------------------inside menu by A.K---------------------------------------- */
@@ -239,7 +53,7 @@ form input:focus{
     position: relative;
     left: -40%;
     color: white;
-    background-image: url(/Auctionly/images/logo.png);
+    background-image: url('/static/Auctionly/images/logo.png');
     background-size: cover;
 }
 
@@ -335,15 +149,15 @@ form input:focus{
 
 .main-nav-bar{
     position: fixed;
+    z-index: 2;
     height: 82px;
     width: 100%;
-    z-index: 1;
     display: flex; 
     justify-content: center;
     align-items: center;
     gap: 2%;
-    transition: background-color 0.4s ease;
     background-color: transparent;
+    transition: 0.4s ease;
 }
 
 .main-nav-contents{
@@ -383,14 +197,14 @@ form input:focus{
     position: absolute;
     top: 1.5vh;
     left: 4vw;
-    background-image: url(/Auctionly/images/logo.png);
+    background-image: url('/static/Auctionly/images/logo.png');
     background-size: cover;
 }
 
 .neela-dabba{
     background-color:#1F2A52 ;
-    height: 635px;
-    width: 34.6vw;
+    height: 83.5vh;
+    width: 39.7vw;
     position: relative;
     bottom: 82px;
     z-index: -1;
@@ -431,6 +245,7 @@ form input:focus{
 .popUPOfSearch{
     visibility: visible;
     position: fixed;
+    transform: scale(1);
     top: 0;
     left: 0%;
     animation-name: ffff;
@@ -513,255 +328,317 @@ form input:focus{
 .slide_container{
     display: flex;
     position: absolute;
-    top: 46%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 58vh;
-    width: 100vw;
-}
-
-#next_btn{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    color: transparent;
+    height: 50vh;
+    width: 90vw;
 }
 
 .slide_container .slides{
     height: 87%;
-    width: 42%;
-    position: relative;
-    top: 3.9vh;
-    left: 6.8vw;
-    overflow: hidden;
+    width: 36%;
+    position: absolute;
+    top: 6.7%;
+    left: 10.7%;
+    background-image: url('/static/Auctionly/images/ab.webp');
+    background-size: cover;
+    border: 9px solid #1F2A52;
 }
 
 .slide_container .slides_border{
     height: 97%;
-    width: 29.1%;
+    width: 29.5%;
     position: relative;
-    right: 36%;
+    left: 9.55%;
     top: 1.6%;
     z-index: -1;
-    overflow: hidden;
-
-}
-
-.slide_container .slides_border div:not(.slides_border_active){
-    top: 0;
-    left: -100%;
-}
-
-.slide_container .slides_border div{
-    height: 100%;
-    width: 100%;
-    position: absolute;
     background: linear-gradient(to right, #475071, #313C60);
-}
 
+}
 
 .slide_container .slides_content{
     height: 100%;
     width: 50%;
     position: absolute;
-    top: 0;
+    top: 25%;
     right: 0;
-    overflow: hidden;
-
-}
-
-.slide_container .slides_content span{
     font-size: 1rem;
+
+}
+
+.slides_content h3{
     position: absolute;
-}
-
-.slide_container .slides_content span:not(.text_active){
-    top: 0;
-    left: -100%;
-}
-
-.slide_container .slides img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    border: 9px solid #1F2A52;
-}
-
-.slide_container .slides img:not(.active){
-    top: 0;
-    left: -100%;
-}
-
-.slides_content span button{
-    position: relative;
-    top: 6.5vh;
-    border: none;
-    border-radius: 15px;
-    padding: 14px 20px 14px 20px;
-    color: white;
-    font-weight: bolder;
-    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
-}
-
-.slides_content span button:hover{
-    cursor: pointer;
-}
-
-.slides_content_descrip{
-    padding: 2.1vw;
-}
-
-.slides_content_descrip h6{
-    font-size: 0.875rem;
-    color: #3c5233;
-    letter-spacing: 2px;
-    margin-top: 12vh;
-}
-
-.slides_content_descrip h3{
-    position: relative;
-    top: 0.4vh;
-    font-size: 1.875rem;
+    top: 5%;
+    margin-left: 20%;
+    font-size: 3.125rem;
     font-weight: 700;
     letter-spacing: 0.88px;
+    color: #000;
 }
 
-.slides_content_descrip p{
-    position: relative;
-    top: 2vh;
-    font-size: 0.875rem;
-    color: #747474;
+.slides_content h6{
+    position: absolute;
+    top: 27%;
+    margin-left: 20%;
+    font-size: 1rem;
+    color: #b45156;
+}
+
+.who_we_are1{
+    height: auto;
+    width: 100vw;
+}
+
+.who_we_are1 span{
+    margin-left: 7.5%;
+    font-size: 1.25rem;
     font-weight: 600;
+    color: #2d2d2d;
 }
 
-@keyframes outgoing {
-    from{
-        left: 0%;
-    }
-    to{
-        left: -200%;
-    }
+.who_we_are1 span div{
+    display: inline-block;
+    height: 1.3px;
+    width: 310px;
+    position: relative;
+    left: 1%;
+    margin-bottom: 5px;
+    background-color: #3c5233;
 }
 
-@keyframes incoming {
-    from{
-        left: 200%;
-    }
-    to{
-        left: 0%;
-    }
+.who_we_are1 h3{
+    font-size: 2.5rem;
+    padding-left: 14vw;
+    margin-top: 10px;
 }
 
-/********************upcoming-arnav**************************/
+.who_we_are1 p{
+    height: auto;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2d2d2d;
+    padding-left: 14vw;
+    padding-right: 13vw;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
 
-.upcoming-auctions-dabba{
-    height: 60vh;
-    width: 75%;
-    background-color: white;
+#who_we_are2{
+    margin-top: 10px;
+}
+
+#who_we_are2 p{
+    text-align: right;
+    position: relative;
+    color: #373737;
+    font-weight: 500;
+    font-size: 1.2rem;
+    top: 15.5vh;
+    right: 1vw;
+}
+
+#who_we_are2 h3{
+    text-align: right;
+    position: relative;
+    top: 15vh;
+    right: 14%;
+}
+
+#who_we_are2 span{
     position: absolute;
-    top: 80vh;
-    right: 0%;
+    right: 7%;
+    margin-top: 9vh;
 }
 
 
-.photo-auctions{
+.who_we_are_blueBox{
+    height: 147vh;
+    width: 50vw;
+    background-color: #f7fafd;
+    position: absolute;
+    top: 72%;
+    left: 38.5%;
+    z-index: -1;
+}
+
+.who_we_are_blueBox img{
+    position: absolute;
+    right: -9%;
+    top: -5%;
+    height: 13vh;
+}
+
+.our_values{
+    height: 95vh;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.our_values div{
+    position: relative;
+    width: calc(100%-15.99%);
     height: 100%;
-    width: 65%;
-    position: absolute;
-    left: 0;
-    background-color: #B45156;
-    background-image: url(/Auctionly/images/coming-soon-banner-1.avif);
+    margin-left: 15.99%;
+}
+
+.our_values .blue_box{
+    position: relative;
+    bottom: 100%;
+    width: 40%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 28%;
+    background-color: #f7fafd;
+}
+
+.our_values p{
+    position: relative;
+    left: 43%;
+    bottom: 150%;
+    width: 50%;
+    color: #373737;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.our_values .fa-chevron-right{
+    position: relative;
+    right: 5%;
+    color: #6D905D;
+    font-size: 20px;
+}
+
+.our_values p span{
+    font-size: 40px;
+    color: rgb(44, 69, 44);
+}
+
+.our_values h3{
+    font-size: 2.5rem;
+    position: relative;
+    left: 30%;
+    top: 14%;
+}
+
+.our_values span div{
+    display: inline-block;
+    height: 1.3px;
+    width: 310px;
+    position: relative;
+    left: -12%;
+    bottom: 1%;
+    background-color: #3c5233;
+}
+
+.our_values span{
+    position: relative;
+    top: 10%;
+    right: 12%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+
+/* -------------------------------------------founders--------------------------------------- */
+
+.founders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.founders .founder_header{
+    display: flex;
+    gap: 8%;
+    height: 8vh;
+}
+
+.founders .founder_header div{
+    display: inline-block;
+    height: 1.3px;
+    width: 30vw;
+    background-color: #3c5233;
+    position: relative;
+    top: 45%;
+}
+
+.founders .founder_header h3{
+    font-size: 2.5rem;
+}
+
+.founders .founders_box{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    height: 79%;
+    width: 100%;
+    margin-top: auto;
+}
+
+.founders_box .founders_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 28%;
+}
+
+.founders_box .founders_info .founders_info_photo{
+    height: 48%;
+    width: 48%;
+    border: 1px dashed black;
+    position: relative;
+    z-index: 1;
+}
+
+#chairman_pic{
+    background-image: url('/static/Auctionly/images/Chairman.jpg');
+    background-size: cover;
+}
+#ceo_photo{
+    background-image: url('/static/Auctionly/images/CEO.jpg');
+    background-size: cover;
+}
+#coo_photo{
+    background-image: url('/static/Auctionly/images/COO.jpg');
     background-size: cover;
 }
 
-.photo-auctions:hover{
-    cursor: pointer;
-}
-
-.photo-side-upcoming-text{
-    font-size: 2rem;
-    font-weight: 700;
-    position: absolute;
-    left: 68%;
-    top: 40%;
-}
-
-
-.view-all-button{
-    display: flex;
-    position: absolute;
-    left: 68%;
-    height: 7vh;
-    width: 140px;
-    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
-    top: 55%;
-    color: white;
-    justify-items: center;
-    align-items: center;
-    border-radius: 14px;
-    font-weight: 600;
-    padding-left: 28px;
-}
-
-.view-all-button:hover{
-    cursor: pointer;
-}
-
-.had-to-do-this{
-    height: 60vh;
-    width: 100%;
-}
-
-.pink-dabba-htb{
-    height: 26vh;
-    width: 50%;
-    background-color: #F3E8E9;
-    display: flex;
-}
-
-.logo-cart-pink{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    letter-spacing: normal;
+.founders_box .founders_info .founders_details{
+    margin-top: auto;
+    margin-bottom: 6%;
+    text-align: center;
     position: relative;
-    left: 12.5%;
-    font-size: 2.7rem;
-
+    z-index: 1;
+    line-height: 1.31rem;
 }
 
-.blue-dabba-hts{
-    height: 26vh;
-    width: 50%;
+.founders_info_blu_box{
+    position: absolute;
+    z-index: 0;
+    margin-top: 7%;
+    height: 43%;
+    width: 27.8%;
     background-color: #EAEEF2;
-    display: flex;
-    position: absolute;
-    right: 0%;
 }
 
-.blue-dabba-text{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    letter-spacing: normal;
-    position: relative;
-    left: 20%;
-    font-size: 2.7rem;
+.founders_name{
+    font-size: 1.375rem;
+    color: #2d2d2d;
 }
 
-.blue-dabba-text:hover{
-    cursor: pointer;
+.founders_post, .founders_email{
+    font-size: 0.875rem;
+    color: #2d2d2d;
 }
 
-.logo-cart-pink:hover{
-    cursor: pointer;
-}
-
-.had-to-do-this-again{
-    height: 26vh;
-    width: 100%;
-}
+/********************upcoming-arnav**************************/
 
 .newsletter-box{
     height: 34vh;

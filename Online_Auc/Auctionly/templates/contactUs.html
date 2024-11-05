@@ -1,60 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="/Auctionly/images/mainLogo (2).jpg">
-    <link rel="stylesheet" href="contactUs.css">
+    <link rel="icon" href="{%static 'images/mainLogo (2).jpg'%}">
+    <link rel="stylesheet" href="{% static 'Auctionly/contactUs.css' %}">
 </head>
 <body>
 
 <!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-<div class="atul_login_box">
-    <div class="login_main_box" id="login_main_box">
-        <!-- logo text img -->
-        <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
-        <!-- login content -->
-        <div class="login_content">
-            <span id="login_content_description">Sign Up & Login to get started</span>
-            <i class="fa-solid fa-xmark" id="login_close"></i>
-            <div class="login_content_heading">
-                <button class="login_content_heading1">CREATE AN ACCOUNT</button>
-                <button class="login_content_heading2">SIGN IN</button>
-            </div>
-            <!-- sign up or login form -->
-            <div class="signup_box">
-                <form class="form_for_signUp">
-                    <input class="input_formatting" id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Enter Password" required>
-                    <a href="#" id="forget_password">Forget Password?</a>
-                    <p id="otp">Sign in using <b>OTP</b></p>
-                    <div class="login_button_div">
-                        <button id="login_button">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- create acc -->
-            <div class="createAcc_box">
-                
-                <form class="form_for_createAcc">
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="text"  placeholder="Name" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="email"  placeholder="Email" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Set Password" required>
-                    <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span> 
-                    <div class="login_button_div">
-                        <button id="login_button">GET STARTED</button>
-                    </div>
-                </form>
-            </div>
-        
-        </div>
-    </div>
-</div>
-
 
     <div class="inside_menu">
         <div class="inside_menu_navbar">
@@ -165,7 +122,7 @@
                     <div id="head-office-info">
 
                         <h4 id="HEAD-OFFICE-HEADLINE"> 
-                         <img src="/Auctionly/images/head-office.png" alt="head-office-logo" : height="28px": width="22px" id="head-photo">HEAD OFFICE
+                         <img src="{% static 'Auctionly/images/head-office.png' %}" alt="head-office-logo" : height="28px": width="22px" id="head-photo">HEAD OFFICE
                         </h4>
 
                         <div id="office-para">
@@ -182,7 +139,7 @@
 
 
                         <h4 id="GALLERY-HEADLINE">
-                            <img src="/Auctionly/images/gallery-icon.png" alt="gallery": height="25px": width="25px": id="gallery-photo">GALLERY
+                            <img src="{% static 'Auctionly/images/gallery-icon.png' %}" alt="gallery": height="25px": width="25px": id="gallery-photo">GALLERY
                         </h4>
 
                         <div id="gallery-para">
@@ -201,7 +158,7 @@
 
 
                         <h4 id="phone-headline">
-                            <img src="/Auctionly/images/phone-icon.png" alt="phone": height="25px": width="25px": id="phone-photo">PHONE
+                            <img src="{% static 'Auctionly/images/phone-icon.png' %}" alt="phone": height="25px": width="25px": id="phone-photo">PHONE
                         </h4>
 
                         <div id="phone-num">
@@ -216,10 +173,10 @@
                     <div id="email-info">
 
                         <h4 id="email-headline">
-                            <img src="/Auctionly/images/email-icon.png" alt="email": height="20px": width="30px": id="email-photo">Email
+                            <img src="{% static 'Auctionly/images/email-icon.png' %}" alt="email": height="20px": width="30px": id="email-photo">Email
                         </h4>
                         <div id="email-ids">
-                            <p>admin@auctionly.gmail.com</p>
+                            <p>management.auctionly@gmail.com</p>
                         </div>
 
 
@@ -239,7 +196,7 @@
                         <div id="div-name">
                             <div id="name-box">
                                 <div id="pic-1">
-                                    <img src="/Auctionly/images/user-icon.png" alt="user-icon": height="28px": width="20px" id="user-photo">
+                                    <img src="{% static 'Auctionly/images/user-icon.png' %}" alt="user-icon": height="28px": width="20px" id="user-photo">
                                     <div id="name">
                                         <input type="text" placeholder="  Name" id="text-box-name-wala">
                                     </div>
@@ -250,7 +207,7 @@
                         <div id="div-email">
                             <div id="email-box">
                                 <div id="pic-2">
-                                    <img src="/Auctionly/images/gmail.icon.png" alt="user-icon": height="28px": width="31px">
+                                    <img src="{% static 'Auctionly/images/gmail.icon.png' %}" alt="user-icon": height="28px": width="31px">
                                     <div id="email">
                                         <input type="text" placeholder="  Email ID" id="text-box-email-wala">
                                     </div>
@@ -262,7 +219,7 @@
                         <div id="div-phone">
                             <div id="phone-box">
                                 <div id="pic-3">
-                                     <img src="/Auctionly/images/call-icon.png" alt="phone": height="29px": width="29px">
+                                     <img src="{% static 'Auctionly/images/call-icon.png' %}" alt="phone": height="29px": width="29px">
                                     </div>
                                 </div>
                                 <div id="mobile">
@@ -274,7 +231,7 @@
                         <div id="div-ques">
                             <div id="ques-box">
                                 <div id="pic-4">
-                                    <img src="/Auctionly/images/queries-icon.png" alt="ques": height="29px": width="29px">
+                                    <img src="{% static 'Auctionly/images/queries-icon.png' %}" alt="ques": height="29px": width="29px">
                                 </div>
                                 <div id="ques">
                                     <input type="text" placeholder="Queries." id="text-box-ques-wala">
@@ -403,7 +360,7 @@
     </div>
 
 
-    <script src="contactUs.js"></script>
+    <script src="{% static 'Auctionly/contactUs.js'%}"></script>
 
 </body>
 </html>

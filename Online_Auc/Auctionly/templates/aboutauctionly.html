@@ -1,59 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auctionly/About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="/Auctionly/images/mainLogo (2).jpg">
-    <link rel="stylesheet" href="aboutAuctionly.css">
+    <link rel="icon" href="{%static 'images/mainLogo (2).jpg'%}">
+    <link rel="stylesheet" href="{% static 'Auctionly/aboutAuctionly.css' %}">
 </head>
 <body>
-
-<!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-<div class="atul_login_box">
-    <div class="login_main_box" id="login_main_box">
-        <!-- logo text img -->
-        <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
-        <!-- login content -->
-        <div class="login_content">
-            <span id="login_content_description">Sign Up & Login to get started</span>
-            <i class="fa-solid fa-xmark" id="login_close"></i>
-            <div class="login_content_heading">
-                <button class="login_content_heading1">CREATE AN ACCOUNT</button>
-                <button class="login_content_heading2">SIGN IN</button>
-            </div>
-            <!-- sign up or login form -->
-            <div class="signup_box">
-                <form class="form_for_signUp">
-                    <input class="input_formatting" id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Enter Password" required>
-                    <a href="#" id="forget_password">Forget Password?</a>
-                    <p id="otp">Sign in using <b>OTP</b></p>
-                    <div class="login_button_div">
-                        <button id="login_button">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- create acc -->
-            <div class="createAcc_box">
-                
-                <form class="form_for_createAcc">
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="text"  placeholder="Name" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="email"  placeholder="Email" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Set Password" required>
-                    <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span> 
-                    <div class="login_button_div">
-                        <button id="login_button">GET STARTED</button>
-                    </div>
-                </form>
-            </div>
-        
-        </div>
-    </div>
-</div>
 
 
     <div class="inside_menu">
@@ -352,6 +308,6 @@
     </div>
 
 
-    <script src="aboutAuctionly.js"></script>
+    <script src="{% static 'Auctionly/aboutAuctionly.js' %}"></script>
 </body>
 </html>

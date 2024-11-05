@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    letter-spacing: .6px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.login_main_box{
+    height: 90vh;
+    width: 59vw;
+    background-image: url('/static/Auctionly/images/login_background.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 16px 50px 16px;
+}
+
+.adjust_login_main_box{
+    height: 97vh;
+    width: 50vw;
+    position: absolute;
+}
+
+#login_pswd{
+    padding-right: 20px;
+}
+
+.login_comp_img{
+    position: absolute;
+    left: 5%;
+    height: 7vh;
+    width: 8vw;
+    background-color: rgb(0, 0, 0, 0.6);
+    background-image: url('/static/Auctionly/images/logo.png');
+    background-size: cover;
+}
+
+
+.login_content{
+    height: 65vh;
+    width: 64.5%;
+    padding: 0px 12px 0px 12px;
+    margin-left: 26%;
+}
+
+.adjust_login_content_createAcc{
+    height: 83vh;
+    margin-left: 28%;
+}
+
+#login_content_description{
+    color: #585858;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .6px;
+}
+
+#login_close{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 25px;
+    color: #585858;
+    cursor: pointer;
+}
+
+.login_content_heading{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 50px;
+    z-index: 1;
+}
+
+.login_content_heading button{
+    text-align: center;
+    width: 234px;
+    height: 37px;
+    background-color: transparent;
+    border: none;
+    color: #2d2d2d;
+    border-bottom: 2px solid #e74b52;
+    cursor: pointer;
+}
+
+#for_input_margin{
+    margin-bottom: 25px;
+}
+
+form .input_formatting{
+    border: none;
+    height: 8.5vh;
+    width: 100%;
+    font-size: 16px;
+    position: relative;
+    top: 80px;
+    background-color: #ffffff;
+    margin-bottom:10px ;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-indent:35px ;
+}
+
+#login_checkbox{
+    position: relative;
+    top: 15vh;
+}
+
+form input:focus{
+    border: none;
+    outline: none;
+}
+
+.login_button_div{
+    position: relative;
+    top: 115px;
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#login_button{
+    height: 50px;
+    width: 270px;
+    border-radius: 15px;
+    border: none;
+    padding: 0px 30px 0px 30px;
+    color: #ffffff;
+    font-weight: 600;
+    background: linear-gradient(to right, #b45156 0%, #e74b52 100%);
+    cursor: pointer;
+}
+
+#otp{
+    position: relative;
+    top: 140px;
+    left: -5px;
+    color: #2d2d2d;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .7px;
+    z-index: 1;
+}
+
+#otp a{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.alert-info{
+    text-align: center;
+    position: relative;
+    top: -2vh;
+    text-decoration:red underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="atul_login_box">
+        <div class="login_main_box" id="login_main_box">
+            <!-- logo text img -->
+            <div class="login_comp_img"></div>
+            <!-- login content -->
+            <div class="login_content">
+                <span id="login_content_description">Sign up to get started</span>
+                <i class="fa-solid fa-xmark" id="login_close"></i>
+                <div class="login_content_heading">
+                    <button class="login_content_heading1">CREATE AN ACCOUNT</button>
+                </div>
+                
+
+                <!-- create acc -->
+                <div class="createAcc_box">
+                    
+                    <form class="form_for_createAcc" method="post">
+                        {% csrf_token %}
+
+                        {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-info">
+                                {{ message }}
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                        <input class="input_formatting" id="for_input_margin_createAcc" type="text" name="username" placeholder="Name" required>
+                        <input class="input_formatting" id="for_input_margin_createAcc" type="email" name="email" placeholder="Email" required>
+                        <!-- <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required> -->
+                        <input class="input_formatting" id="login_pswd" type="password" name="password" placeholder="Set Password" required>
+                        <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span>
+                        <p id="otp">Already have an account. <a href="sign_in">Sign In</a></p> 
+                        <div class="login_button_div">
+                            <button id="login_button">GET STARTED</button>
+                        </div>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
