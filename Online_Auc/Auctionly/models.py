@@ -11,3 +11,12 @@ class Profile(models.Model):
 
 def __str__(self):
     return self.user.username
+
+class Contact(models.Model):
+    name = models.CharField(max_length=200)
+    mail = models.EmailField()
+    mobile = models.BigIntegerField(unique=True)
+    text = models.CharField(max_length=500)
+    def __str__(self):
+        return self.name
+    

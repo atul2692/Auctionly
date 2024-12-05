@@ -6,8 +6,9 @@ from .models import *
 from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib.auth import authenticate,  login
-from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 # Create your views here.
+
 
 def home(request):
     return render(request, 'Auctionly.html')
@@ -81,6 +82,18 @@ def aboutAuctionly(request):
     return render(request, 'aboutAuctionly.html')
 
 def contactUs(request):
+    if request.method == "POST":
+        contact = Contact()
+        name = request.POST.get('name')
+        mail = request.POST.get('mail')
+        mobile = request.POST.get('mobile')
+        text = request.POST.get('text')
+        contact.name = name
+        contact.mail = mail
+        contact.mobile = mobile
+        contact.text = text
+        contact.save()
+        return HttpResponse("<h1>THANKS FOR CONTACTING AUCTIONLY</h1>")
     return render(request, 'contactUs.html')
 
 def departmentAuctionly(request):

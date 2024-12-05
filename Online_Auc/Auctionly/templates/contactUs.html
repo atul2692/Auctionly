@@ -192,60 +192,62 @@
 
                         <h5 id="form-ki-heading">Lets Get In Touch</h5>
                         <p id="form-para">fill the form below to get in touch with us</p>
-
-                        <div id="div-name">
-                            <div id="name-box">
-                                <div id="pic-1">
-                                    <img src="{% static 'Auctionly/images/user-icon.png' %}" alt="user-icon": height="28px": width="20px" id="user-photo">
-                                    <div id="name">
-                                        <input type="text" placeholder="  Name" id="text-box-name-wala">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="div-email">
-                            <div id="email-box">
-                                <div id="pic-2">
-                                    <img src="{% static 'Auctionly/images/gmail.icon.png' %}" alt="user-icon": height="28px": width="31px">
-                                    <div id="email">
-                                        <input type="text" placeholder="  Email ID" id="text-box-email-wala">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div id="div-phone">
-                            <div id="phone-box">
-                                <div id="pic-3">
-                                     <img src="{% static 'Auctionly/images/call-icon.png' %}" alt="phone": height="29px": width="29px">
-                                    </div>
-                                </div>
-                                <div id="mobile">
-                                    <input type="text" placeholder="   Mobile No." id="text-box-mobile-wala">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="div-ques">
-                            <div id="ques-box">
-                                <div id="pic-4">
-                                    <img src="{% static 'Auctionly/images/queries-icon.png' %}" alt="ques": height="29px": width="29px">
-                                </div>
-                                <div id="ques">
-                                    <input type="text" placeholder="Queries." id="text-box-ques-wala">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="submit">
-                            <button id="submit-button">SUBMIT</button>
-                        </div>
-
-
                         
+                        <form method="post">
+                            {% csrf_token %}
+                            <div id="div-name">
+                                <div id="name-box">
+                                    <div id="pic-1">
+                                        <img src="{% static 'Auctionly/images/user-icon.png' %}" alt="user-icon": height="28px": width="20px" id="user-photo">
+                                        <div id="name">
+                                            <input name="name" type="text" placeholder="  Name" id="text-box-name-wala">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="div-email">
+                                <div id="email-box">
+                                    <div id="pic-2">
+                                        <img src="{% static 'Auctionly/images/gmail.icon.png' %}" alt="user-icon": height="28px": width="31px">
+                                        <div id="email">
+                                            <input name="mail" type="text" placeholder="  Email ID" id="text-box-email-wala">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                            <div id="div-phone">
+                                <div id="phone-box">
+                                    <div id="pic-3">
+                                         <img src="{% static 'Auctionly/images/call-icon.png' %}" alt="phone": height="29px": width="29px">
+                                        </div>
+                                    </div>
+                                    <div id="mobile">
+                                        <input name="mobile" type="text" placeholder="   Mobile No." id="text-box-mobile-wala">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="div-ques">
+                                <div id="ques-box">
+                                    <div id="pic-4">
+                                        <img src="{% static 'Auctionly/images/queries-icon.png' %}" alt="ques": height="29px": width="29px">
+                                    </div>
+                                    <div id="ques">
+                                        <input name="text" type="text" placeholder="Queries." id="text-box-ques-wala">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="submit">
+                                <button type="submit" id="submit-button">SUBMIT</button>
+                            </div>
+                        </form>
 
+
+                    
                     </div>
 
                 </div>

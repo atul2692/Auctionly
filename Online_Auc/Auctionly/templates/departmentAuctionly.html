@@ -12,49 +12,6 @@
 <body>
 
 <!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-<div class="atul_login_box">
-    <div class="login_main_box" id="login_main_box">
-        <!-- logo text img -->
-        <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
-        <!-- login content -->
-        <div class="login_content">
-            <span id="login_content_description">Sign Up & Login to get started</span>
-            <i class="fa-solid fa-xmark" id="login_close"></i>
-            <div class="login_content_heading">
-                <button class="login_content_heading1">CREATE AN ACCOUNT</button>
-                <button class="login_content_heading2">SIGN IN</button>
-            </div>
-            <!-- sign up or login form -->
-            <div class="signup_box">
-                <form class="form_for_signUp">
-                    <input class="input_formatting" id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Enter Password" required>
-                    <a href="#" id="forget_password">Forget Password?</a>
-                    <p id="otp">Sign in using <b>OTP</b></p>
-                    <div class="login_button_div">
-                        <button id="login_button">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- create acc -->
-            <div class="createAcc_box">
-                
-                <form class="form_for_createAcc">
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="text"  placeholder="Name" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="email"  placeholder="Email" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Set Password" required>
-                    <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span> 
-                    <div class="login_button_div">
-                        <button id="login_button">GET STARTED</button>
-                    </div>
-                </form>
-            </div>
-        
-        </div>
-    </div>
-</div>
 
 
     <div class="inside_menu">
@@ -170,8 +127,9 @@
 
 <div class="photos-department">
     <div class="line-1">
-        <img src="/Auctionly/images/mordernPainting.png">
-        <img src="/Auctionly/images/jewellert.png">
+        <img src="{%static 'Auctionly/images/mordernPainting.png' %}">
+        <img src="{%static 'Auctionly/images/jewellert.png' %}">
+       
     </div>
     <div class="line-1-text">
         <div class="line-text-1">Modern Indian Art</div>
@@ -179,8 +137,8 @@
     </div>
     <br><br>
     <div class="line-2">
-        <img src="/Auctionly/images/furniture.png">
-        <img src="/Auctionly/images/timepieces.png">
+        <img src="{%static 'Auctionly/images/furniture.png' %}">
+        <img src="{%static 'Auctionly/images/timepieces.png' %}">
     </div>
     <div class="line-2-text">
         <div class="line-text-1">Furniture And Decorative Arts</div>
@@ -188,8 +146,8 @@
     </div>
     <br><br>
     <div class="line-3">
-        <img src="/Auctionly/images/department-automobile.jpg">
-        <img src="/Auctionly/images/rare books.png">
+        <img src="{%static 'Auctionly/images/department-automobile.jpg' %}">
+        <img src="{%static 'Auctionly/images/rare books.png' %}">
     </div>
     <div class="line-3-text">
         <div class="line-text-1">Automobiles</div>
@@ -197,8 +155,8 @@
     </div>
     <br><br>
     <div class="line-4">
-        <img src="/Auctionly/images/textiles.png">
-        <img src="/Auctionly/images/memorablia.png">
+        <img src="{%static 'Auctionly/images/textiles.png' %}">
+        <img src="{%static 'Auctionly/images/memorablia.png' %}">
     </div>
     <div class="line-4-text">
         <div class="line-text-1">Textiles</div>
@@ -206,8 +164,8 @@
     </div>
     <br><br>
     <div class="line-5">
-        <img src="/Auctionly/images/fine-writing.png">
-        <img src="/Auctionly/images/department-property.jpeg">
+        <img src="{%static 'Auctionly/images/fine-writing.png' %}">
+        <img src="{%static 'Auctionly/images/department-property.jpeg' %}">
     </div>
     <div class="line-5-text">
         <div class="line-text-1">Fine Writing Instruments</div>
@@ -215,8 +173,8 @@
     </div>
     <br><br>
     <div class="line-6">
-        <img src="/Auctionly/images/luxury.png">
-        <img src="/Auctionly/images/natural history.png">
+        <img src="{%static 'Auctionly/images/luxury.png' %}">
+        <img src="{%static 'Auctionly/images/natural history.png' %}">
     </div>
     <div class="line-6-text">
         <div class="line-text-1">Luxury</div>
@@ -275,7 +233,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="left-section">
-                <img src="/Auctionly/images/logo.png" alt="Company Logo" class="logo">
+                <img src="{% static '/Auctionly/images/logo.png' %}" alt="Company Logo" class="logo">
                 <p>Auctionly, with its 1 month of pioneering experience in the Online Auction industry. Explore products ranging from fine writing instruments, jewelry, textiles, art, and more.</p>
                 <p>The online auction is set to foster collaboration and open doors to exciting new possibilities in the world of gifting.</p><br>
                 <div class="social-icons">
@@ -329,7 +287,7 @@
     </footer>
 </div>
 
-<script src="javascriptAtul.js"></script>
+<script src="{% static 'Auctionly/javascriptAtul.js' %}"></script>
 
    
 </body>
