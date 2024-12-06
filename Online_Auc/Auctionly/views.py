@@ -11,7 +11,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'Auctionly.html')
+    return render(request, 'index.html')
 
 def sign_in(request):
 
