@@ -59,18 +59,23 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 # Google OAuth settings
+
+
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': ['profile', 'email'],
-        'AUTH_PARAMS': {'access_type': 'online', 'prompt': 'select_account',},
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+            'prompt': 'select_account',
+        },
         'APP': {
-            'client_id': '',  # Replace with your ID
-            'secret': '', # Replace with your secret
+            'client_id': os.environ.get('GOOGLE_OAUTH_CLIENT_ID'),
+            'secret': os.environ.get('GOOGLE_OAUTH_CLIENT_SECRET'),
             'key': '',
-            'callback_url': 'http://localhost:8000/accounts/google/login/callback/'
         }
     }
 }
+
 
 # Redirect after login
 LOGIN_REDIRECT_URL = '/'
@@ -187,5 +192,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'management.auctionly@gmail.com'
-EMAIL_HOST_PASSWORD = 'your_password_here'  # Replace with your email password
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # Replace with your email password
 
