@@ -9,3 +9,7 @@ class ProfileAdmin(admin.ModelAdmin):
 admin.site.register(Profile, ProfileAdmin)
 
 admin.site.register(Contact)
+
+admin.site.register(Product)
+
+admin.site.register(Bid)

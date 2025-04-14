@@ -7,135 +7,220 @@
     <title>Upcoming Auction</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="{%static 'images/mainLogo (2).jpg'%}">
+    
+
+    <style>
+    
+        .main-nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            color: black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .main-nav-bar-logo img {
+            height: 7vh;
+            width: 8vw;
+            object-fit: cover;
+        }
+        .main-nav-contents {
+            font-size: 1em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .main-nav-contents a {
+            color: #000;
+            text-decoration: none;
+        }
+
+
+        .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.main-nav-contents:hover .dropdown-content {
+    display: block;
+}
+
+/* Caret icon animation */
+.fa-caret-down {
+    transition: transform 0.3s;
+    margin-left: 5px;
+}
+
+.main-nav-contents:hover .fa-caret-down {
+    transform: rotate(180deg);
+}
+
+
+        .search-icon-navbar {
+            padding: 5px;
+        }
+        .main-nav-menu .main-nav-menu-contents {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-section .username {
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .profile-section a {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 5px 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .profile-section a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+
+    </style>
+
     <link rel="stylesheet" href="{% static 'Auctionly/upcomingauction.css' %}">
+    
 </head>
 <body>
 
-<!-- ---------------------------------Atul-----login box-------------------------------------------- -->
-<div class="atul_login_box">
-    <div class="login_main_box" id="login_main_box">
-        <!-- logo text img -->
-        <a href="/Auctionly/Auctionly.html"><div class="login_comp_img"></div></a>
-        <!-- login content -->
-        <div class="login_content">
-            <span id="login_content_description">Sign Up & Login to get started</span>
-            <i class="fa-solid fa-xmark" id="login_close"></i>
-            <div class="login_content_heading">
-                <button class="login_content_heading1">CREATE AN ACCOUNT</button>
-                <button class="login_content_heading2">SIGN IN</button>
+    <div class="main-nav-bar" id="main-nav-bar">
+        <a href="{% url 'home' %}">
+            <div class="main-nav-bar-logo">
+                <img src="{% static 'Auctionly/images/logo.png' %}" alt="Auctionly Logo">
             </div>
-            <!-- sign up or login form -->
-            <div class="signup_box">
-                <form class="form_for_signUp">
-                    <input class="input_formatting" id="for_input_margin" type="tel"  placeholder="Email/Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Enter Password" required>
-                    <a href="#" id="forget_password">Forget Password?</a>
-                    <p id="otp">Sign in using <b>OTP</b></p>
-                    <div class="login_button_div">
-                        <button id="login_button">LOGIN</button>
-                    </div>
-                </form>
+        </a>
+        <div class="main-nav-contents main-nav-contents3">
+            <a href="#">EXHIBITION</a>
+        </div>
+        <div class="main-nav-contents main-nav-contents3">
+            AUCTIONS <i class="fa-solid fa-caret-down"></i>
+            <!-- Dropdown Content -->
+            <div class="dropdown-content">
+                <a href="{% url 'upcomingauction' %}">Upcoming Auctions</a>
+                <a href="{% url 'liveauction' %}">Live Auctions</a>
+                <a href="{% url 'pastauction' %}">Past Auctions</a>
             </div>
-
-            <!-- create acc -->
-            <div class="createAcc_box">
-                
-                <form class="form_for_createAcc">
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="text"  placeholder="Name" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="email"  placeholder="Email" required>
-                    <input class="input_formatting" id="for_input_margin_createAcc" type="tel"  placeholder="Mobile Number" required>
-                    <input class="input_formatting" id="login_pswd" type="password" placeholder="Set Password" required>
-                    <input style="margin-left: 5px;" id="login_checkbox" type="checkbox" required>&nbsp;<span id="login_checkbox">I agree to the <a href="#" style="color: blue;">Terms & Conditions</a></span> 
-                    <div class="login_button_div">
-                        <button id="login_button">GET STARTED</button>
-                    </div>
-                </form>
+        </div>
+        <div class="main-nav-contents profile-section">
+            {% if user.is_authenticated %}
+                <span class="username">Welcome, {{ user.username }}</span>
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'sign_in' %}">Sign In</a>
+                <a href="{% url 'sign_up' %}">Sign Up</a>
+            {% endif %}
+        </div>
+        <div class="main-nav-contents">
+            <div class="search-icon-navbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-        
+        </div>
+        <div class="main-nav-menu">
+            <button id="main_page_menu_btn" class="main-nav-menu-contents">MENU <i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
-</div>
-
 
     <div class="inside_menu">
         <div class="inside_menu_navbar">
             <div class="inside_menu_navbar_img"></div>
-            <div class="inside_menu_navbar_close">&times;</div>
+            <div class="inside_menu_navbar_close">×</div>
         </div>
         <div class="inside_menu_box">
             <div class="inside_menu_boxes" id="inside_menu_boxes1">
                 <div class="inside_menu_boxes_content">
                     <h3>ABOUT US</h3>
-                    <a href="/Auctionly/aboutauctionly.html"><p>About Auctionly</p></a>
+                    <a href="{% url 'aboutAuctionly' %}"><p>About Auctionly</p></a>
                 </div>
             </div>
             <div class="inside_menu_boxes" id="inside_menu_boxes2">
                 <div class="inside_menu_boxes_content">
                     <h3>INSIGHTS</h3>
-                    <p><a href="departmentAuctionly.html">Department</a></p>
+                    <p><a href="{% url 'departmentAuctionly' %}">Department</a></p>
                 </div>
             </div>
             <div class="inside_menu_boxes" id="inside_menu_boxes3">
                 <div class="inside_menu_boxes_content">
                     <h3>CONTACT US</h3>
-                    <a href="/Auctionly/contactUs.html"><p>Contact Us</p></a><br>
-                    <p> How To Sell <br><br>
-                        How To Buy</p>
+                    <a href="{% url 'contactUs' %}"><p>Contact Us</p></a><br>
+                    <p>How To Sell<br><br>How To Buy</p>
                 </div>
             </div>
             <div class="inside_menu_boxes" id="inside_menu_boxes4">
                 <div class="inside_menu_boxes_content">
                     <h3>QUICK LINKS</h3>
-                    <p><a href="liveauction.html">Live Auctions</a><br><br>
-                       <a href="upcomingauction.html">Upcoming Auctions</a><br><br>
-                       <a href="pastauction.html">Past Auctions</a></p>
+                    <p><a href="{% url 'liveauction' %}">Live Auctions</a><br><br>
+                       <a href="{% url 'upcomingauction' %}">Upcoming Auctions</a><br><br>
+                       <a href="{% url 'pastauction' %}">Past Auctions</a></p>
                 </div>
             </div>
         </div>
-
         <div class="inside_menu_buttons">
-            <div id="inside_menu_signIn">SIGN IN / SIGN UP</div>
+            <div id="inside_menu_signIn">
+                {% if user.is_authenticated %}
+                    Welcome, {{ user.username }} | <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                    <a href="{% url 'sign_in' %}">SIGN IN</a> / <a href="{% url 'sign_up' %}">SIGN UP</a>
+                {% endif %}
+            </div>
             <div id="inside_menu_appleStore">Apple Store</div>
             <div id="inside_menu_playStore">Play Store</div>
             <div id="inside_menu_space"></div>
-            <div id="inside_menu_contact"><a href="contactUs.html">CONTACT US</a></div>
+            <div id="inside_menu_contact"><a href="{% url 'contactUs' %}">CONTACT US</a></div>
         </div>
     </div>
 
+    <div class="neela-dabba"></div>
 
-    <!-------------------------------Arnav-Backdrdop----------------------------------------------------->
-    <div class="main-nav-bar" id="main-nav-bar">
-        <a href="/Auctionly/Auctionly.html"><div class="main-nav-bar-logo">
-            <!------- dega icon ---------------->
-        </div></a>
-        <div class="main-nav-contents main-nav-contents3">EXHIBITION</div>
-        <div class="main-nav-contents main-nav-contents3">AUCTIONS <i class="fa-solid fa-caret-down"></i></div>
-        <div class="main-nav-contents main-nav-contents3" id="main-nav-bar-login">LOGIN &nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <div class="main-nav-contents">
-            <div class="search-icon-navbar">
-              <!------Search-icon--------->
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-        <div class="main-nav-menu">
-        <div id="main_page_menu_btn" class="main-nav-menu-contents">MENU &nbsp;<i class="fa-solid fa-bars"></i></div>   
-        </div>
-    </div>
-    <div class="neela-dabba">
-        <!--------------DABBA DAAL DIA-------------------->
-    </div>
-
-    <!-------------------------------Aneesh-----search box------------------------------ --> 
-    
     <div class="modal-body-container">
         <div id="modal-body">
-
             <div id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="search-here" placeholder="Search...">
-                <p> &times; </p>
+                <p>×</p>
             </div>
-
             <div id="recent-search">
                 <h4 id="title">Your Recent Searches</h4>
             </div>
@@ -150,7 +235,9 @@
     <div class="slide_container">
 
 
-        <div class="slides"><!-- About Us Image --></div>
+        <div class="slides">
+            <!-- <img style="height: 100%; width: 100%;" src="{% static 'Auctionly/images/liveauction.webp' %}" alt="main-image"> -->
+        </div>
         <div class="slides_border"><!-- opacity waala border--></div>
         <div class="slides_content">
             <h6>Auctionly: Online Auction Platform for luxury collectibles and personalized gifting</h6>
@@ -168,23 +255,24 @@
 
             <div id="row-2">
                 <div id="live-auction-1">
-                  <a href=" ">LIVE AUCTION</a>
+                  <a href="{% url 'liveauction' %}">LIVE AUCTION</a>
                 </div>
             </div>
 
             <div id="row-2">
                 <div id="live-auction">
-                  <a href=" ">UPCOMING AUCTION</a>
+                  <a href="{% url 'upcomingauction' %}">UPCOMING AUCTION</a>
                 </div>
             </div>
 
             <div id="row-2">
                 <div id="live-auction-3">
-                  <a href=" ">PAST AUCTION</a>
+                  <a href="{% url 'pastauction' %}">PAST AUCTION</a>
                 </div>
             </div>
 
-            <img src="/Auctionly/images/coming-soon.avif" alt="auction-img": height="350px", width="600px", id="coming-soon">
+            <img src="{%static 'Auctionly/images/coming-soon.avif'%}" alt="auction-img": height="350px", width="600px", id="coming-soon">
+            
 
             <div id="auction-coming-soon">
                 <p>--------------------------------Upcoming Auction Coming Soon -------------------------------</p>
@@ -240,7 +328,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <div class="left-section">
-                    <img src="/Auctionly/images/logo.png" alt="Company Logo" class="logo">
+                    <img src="{%static 'Auctionly/images/logo.png'%}" alt="Company logaaaaa" class="logo">
                     <p>Auctionly, with its 37 years of pioneering experience in the gifting industry is launching its first online auction. Explore products ranging from fine writing instruments, jewelry, textiles, art, and more.</p>
                     <p>The online auction is set to foster collaboration and open doors to exciting new possibilities in the world of gifting.</p><br>
                     <div class="social-icons">
@@ -295,7 +383,7 @@
     </div>
 
 
-    <script src="contactUs.js"></script>
+    <script src="{% static 'Auctionly/contactUs.js' %}"></script>
 
 </body>
 </html>

@@ -404,7 +404,6 @@ a:active{
 .line-1{
     height: 50vh;
     width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
     position: relative;
     left: 7%;
     background-size: cover;
@@ -423,7 +422,7 @@ a:active{
 .line-2{
     height: 50vh;
     width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
+    
     position: relative;
     left: 7%;
     background-size: cover;
@@ -442,7 +441,7 @@ a:active{
 .line-3{
     height: 50vh;
     width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
+    
     position: relative;
     left: 7%;
     background-size: cover;
@@ -461,7 +460,7 @@ a:active{
 .line-4{
     height: 50vh;
     width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
+    
     position: relative;
     left: 7%;
     background-size: cover;
@@ -480,7 +479,7 @@ a:active{
 .line-5{
     height: 50vh;
     width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
+    
     position: relative;
     left: 7%;
     background-size: cover;
@@ -495,42 +494,6 @@ a:active{
     font-size: 1.5rem;
     gap: 24.3%;
 }
-
-.line-6{
-    height: 50vh;
-    width: 35%;
-    /* background-image: url('/static/Auctionly/images/mordernPainting.png'); */
-    position: relative;
-    left: 7%;
-    background-size: cover;
-    display: flex;
-    gap: 25%;
-}
-
-.line-6-text{
-    display: flex;
-    position: relative;
-    left: 7%;
-    font-size: 1.5rem;
-    gap: 40.2%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

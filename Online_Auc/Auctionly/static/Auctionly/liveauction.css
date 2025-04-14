@@ -243,7 +243,7 @@ form input:focus{
     position: relative;
     left: -40%;
     color: white;
-    background-image: url(/Auctionly/images/logo.png);
+    background-image: url('/static/Auctionly/images/logo.png');
     background-size: cover;
 }
 
@@ -380,6 +380,8 @@ form input:focus{
     cursor: pointer;
     
 }
+
+
 
 .main-nav-bar-logo{
     height: 7vh;
@@ -524,14 +526,13 @@ form input:focus{
     height: 50vh;
     width: 90vw;
 }
-
-.slide_container .slides{
+.slides{
     height: 87%;
     width: 36%;
     position: absolute;
     top: 6.7%;
     left: 10.7%;
-    background-image: url(/Auctionly/images/liveauction.webp);
+    background-image: url('/static/Auctionly/images/liveauction.webp');
     background-size: cover;
     border: 9px solid #1F2A52;
 }

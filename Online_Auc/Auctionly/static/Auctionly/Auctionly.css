@@ -170,10 +170,53 @@ a{
     font-weight: 600;   
 }
 
+/* Dropdown menu (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.main-nav-contents:hover .dropdown-content {
+    display: block;
+}
+
+/* Caret icon animation */
+.fa-caret-down {
+    transition: transform 0.3s;
+    margin-left: 5px;
+}
+
+.main-nav-contents:hover .fa-caret-down {
+    transform: rotate(180deg);
+}
+
 .main-nav-contents a:hover{
-    color: #EC1B24;
-    cursor: pointer;
-    font-weight: 600;   
+    /* color: #EC1B24; */
+    cursor: pointer;  
 }
 
 

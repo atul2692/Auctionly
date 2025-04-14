@@ -243,7 +243,7 @@ form input:focus{
     position: relative;
     left: -40%;
     color: white;
-    background-image: url(/Auctionly/images/logo.png);
+    background-image: url('/static/Auctionly/images/logo.png');
     background-size: cover;
 }
 
@@ -531,7 +531,7 @@ form input:focus{
     position: absolute;
     top: 6.7%;
     left: 10.7%;
-    background-image: url(/Auctionly/images/liveauction.webp);
+    background-image: url('/static/Auctionly/images/liveauction.webp');
     background-size: cover;
     border: 9px solid #1F2A52;
 }
