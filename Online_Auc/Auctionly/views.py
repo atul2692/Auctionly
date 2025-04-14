@@ -191,12 +191,18 @@ def verify(request, auth_token):
 
 # fxn for sending email for authetication
 
+
 def send_mail_after_registration(email, token):
-    subject = 'Your acc needs to be verified'
-    message = f'Hi paste the link to verify your account http://127.0.0.1:8000/verify/{token} '
+    domain = settings.SITE_DOMAIN  # Set this in settings.py or via environment variable
+    verify_url = f'http://{domain}/verify/{token}'
+    
+    subject = 'Verify Your Account'
+    message = f'Hi, please click the link below to verify your account:\n{verify_url}'
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
+
     send_mail(subject, message, email_from, recipient_list)
+
 
 
 

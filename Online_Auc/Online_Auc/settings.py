@@ -194,3 +194,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'management.auctionly@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # Replace with your email password
 
+SITE_DOMAIN = os.environ.get('SITE_DOMAIN', 'https://auctionly-production.up.railway.app')
