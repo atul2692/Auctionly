@@ -25,7 +25,7 @@ class Product(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField()
     image = models.ImageField(upload_to='images/')
-    starting_bid = models.DecimalField(max_digits=10, decimal_places=2)
+    starting_bid = models.DecimalField(max_digits=20, decimal_places=2)
     end_auction = models.DateTimeField()
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     winner = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='buyer')
