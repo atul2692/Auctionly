@@ -125,6 +125,7 @@ def furniture(request):
 
 def jewellery(request):
     return render(request, 'jewellery.html')
+    
 
 
 
@@ -253,6 +254,8 @@ def handle_ended_auctions():
         product.notified = True
         product.is_auction_active = False
         product.save()
+
+
 
 from django.http import HttpResponse
 
